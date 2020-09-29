@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey form</title>
+
+    <title>Quarantine Survey Form</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <div class="container">
       <header>
-        <h1 id="title" class="text">Survey Form</h1>
+        <h1 id="title" class="text">QUARANTINE CHECKER</h1>
         <p id="description" class="description text-center">It's for my thesis</p>
       </header>
       <form action="" id="survey-form">
@@ -34,7 +39,7 @@
         </div>
         <div class="form-group">
           <label for="number" id="number-label">
-            <span class="clue"></span>
+            <span class="clue">(Optional)</span>
           </label>
           <input 
             type="number" 
@@ -46,81 +51,93 @@
             placeholder="Age">
         </div>
         <div class="form-group">
-          <p>Which option best describes your current role?</p>
-          <select name="role" id="dropdown" class="form-control" required>
-            <option disabled selected value>Select current role</option>
-            <option value="student">Student</option>
-            <option value="job">Full time job</option>
-            <option value="leaner">Full time learner</option>
+          <p>What's your current state?</p>
+          <select name="clan" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select current state</option>
+            <option value="cool">I'm cool, staying home, doing my thing.</option>
+            <option value="crazy">I'm crazy, going out whenever I can and without a mask.</option>
+            <option value="afraid">I'm afraid, going out just the necessary.</option>
             <option value="preferNo">Prefer not to say</option>
             <option value="other">Other</option>
           </select>
         </div>
         <div class="form-group">
-          <p>Would you recommend this site to a friend?</p>
+          <p>Would you ever imagined surviving this historical fact?</p>
           <label>
             <input 
+              type="radio"
               name="user-recommend"
               value="definitely"
-              type="radio"
-              class="input-radio">Definitely
+              class="input-radio">Definitely, we deserved it.
           </label>
           <label>
             <input 
+              type="radio" 
               name="user-recommend"
               value="maybe"
-              type="radio" 
-              class="input-radio">Maybe
+              class="input-radio">Maybe, I really don't care.
           </label>
           <label>
             <input 
+              type="radio" 
               name="user-recommend"
               value="not-sure"
-              type="radio"
-              class="input-radio">Not sure
+              class="input-radio">No, in a million years.
           </label>
         </div>
         <div class="form-group">
-          <p>What is your favorite feature of this site</p>
-          <select name="mostLIke" id="most-like" class="form-control" required>
+          <p>Who is your company during this quaratine?</p>
+          <select name="company" id="company" class="form-control" required>
             <option disabled selected value>Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open source</option>
+            <option value="challenges">Family</option>
+            <option value="projects">Roomate</option>
+            <option value="community">Pet</option>
+            <option value="openSource">Sweetheart</option>
+            <option value="openSource">Lonely AF</option>
           </select>
         </div>
         <div class="form-group">
-          <p>What would you like to see improved
+          <p>What skill you earned during quarantine?
             <span class="clue">(Check all that apply)</span>
           </p>
-            <input 
+            <label for="prefer">
+              <input 
+                name="prefer"
+                value="bakery"
+                type="checkbox"
+                class="input-checkbox">Bakery chef
+            </label>
+            <label for="prefer">
+              <input 
+                name="prefer"
+                value="hair-cut"
+                type="checkbox"
+                class="input-checkbox">Hair-cut master
+            </label>
+            <label for="prefer">
+              <input 
+                name="prefer"
+                value="cleaning-tips"
+                type="checkbox"
+                class="input-checkbox">Cleaning tips boss
+            </label>
+            <label for="prefer">
+              <input 
+                name="prefer"
+                value="dregree"
+                type="checkbox"
+                class="input-checkbox">Master Degree Queen/King
+            </label>
+            <label for="prefer">
+              <input 
               name="prefer"
-              value="front-end-projects"
+              value="yoga"
               type="checkbox"
-              class="input-checkbox">
-            <label for="prefer">Front-end projects</label>
-            <input 
-              name="prefer"
-              value="back-end-projects"
-              type="checkbox"
-              class="input-checkbox">
-            <label for="prefer">Back-end projects</label>
-            <input 
-              name="prefer"
-              value="front-end-projects"
-              type="checkbox"
-              class="input-checkbox">
-            <label for="prefer">Front-end projects</label>
-            <input 
-              name="prefer"
-              value="front-end-projects"
-              type="checkbox"
-              class="input-checkbox">
-            <label for="prefer">Front-end projects</label>
+              class="input-checkbox">Yoga Guru
+            </label>
         </div>
         <div class="form-group">
-          <p>Any comments or suggestions?</p>
+          <p>Any comments or suggestions to other people in quarantine?</p>
           <textarea 
             id="comments"
             class="input-textarea"
