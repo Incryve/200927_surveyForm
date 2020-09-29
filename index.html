@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -51,8 +52,8 @@
             placeholder="Age">
         </div>
         <div class="form-group">
-          <p>What's your current state?</p>
-          <select name="clan" id="dropdown" class="form-control" required>
+          <p>What's your current mental state?</p>
+          <select name="mental-state" id="dropdown" class="form-control" required>
             <option disabled selected value>Select current state</option>
             <option value="cool">I'm cool, staying home, doing my thing.</option>
             <option value="crazy">I'm crazy, going out whenever I can and without a mask.</option>
@@ -61,39 +62,39 @@
             <option value="other">Other</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group radio">
           <p>Would you ever imagined surviving this historical fact?</p>
           <label>
             <input 
               type="radio"
-              name="user-recommend"
+              name="imagined"
               value="definitely"
               class="input-radio">Definitely, we deserved it.
           </label>
           <label>
             <input 
               type="radio" 
-              name="user-recommend"
+              name="imagined"
               value="maybe"
               class="input-radio">Maybe, I really don't care.
           </label>
           <label>
             <input 
               type="radio" 
-              name="user-recommend"
-              value="not-sure"
+              name="imagine"
+              value="not-imagine"
               class="input-radio">No, in a million years.
           </label>
         </div>
         <div class="form-group">
-          <p>Who is your company during this quaratine?</p>
+          <p>Who is your company during this quarantine?</p>
           <select name="company" id="company" class="form-control" required>
             <option disabled selected value>Select an option</option>
-            <option value="challenges">Family</option>
-            <option value="projects">Roomate</option>
-            <option value="community">Pet</option>
-            <option value="openSource">Sweetheart</option>
-            <option value="openSource">Lonely AF</option>
+            <option value="family">Family</option>
+            <option value="roomate">Roomate</option>
+            <option value="pet">Pet</option>
+            <option value="sweetheart">Sweetheart</option>
+            <option value="lonely">Lonely AF</option>
           </select>
         </div>
         <div class="form-group">
@@ -102,42 +103,42 @@
           </p>
             <label for="prefer">
               <input 
-                name="prefer"
+                name="skill"
                 value="bakery"
                 type="checkbox"
                 class="input-checkbox">Bakery chef
             </label>
             <label for="prefer">
               <input 
-                name="prefer"
+                name="skill"
                 value="hair-cut"
                 type="checkbox"
                 class="input-checkbox">Hair-cut master
             </label>
             <label for="prefer">
               <input 
-                name="prefer"
+                name="skill"
                 value="cleaning-tips"
                 type="checkbox"
                 class="input-checkbox">Cleaning tips boss
             </label>
             <label for="prefer">
               <input 
-                name="prefer"
+                name="skill"
                 value="dregree"
                 type="checkbox"
                 class="input-checkbox">Master Degree Queen/King
             </label>
             <label for="prefer">
               <input 
-              name="prefer"
+              name="skill"
               value="yoga"
               type="checkbox"
               class="input-checkbox">Yoga Guru
             </label>
         </div>
         <div class="form-group">
-          <p>Any comments or suggestions to other people in quarantine?</p>
+          <p>Any cry for help?</p>
           <textarea 
             id="comments"
             class="input-textarea"
