@@ -85,7 +85,8 @@ fieldset {
 }
 
 .form-control:focus {
-  border: 1px solid #ef8e38;
+  border: 1px solid rgb(239, 142, 56);
+  box-shadow: 0 0 5px rgba(239, 142, 56, 1);
 }
 
 .form-group {
@@ -129,7 +130,7 @@ textarea,
 #name,
 #email,
 #age {
-  padding: 0.2em;
+  padding: 0.3em;
   outline: none;
 }
 
