@@ -138,3 +138,9 @@ p {
   font-weight: 300;
   padding-bottom: 5px;
 }
+
+footer {
+  margin-top: 10px;
+  font-size: 0.7em;
+  text-align: center;
+}
